@@ -38,7 +38,7 @@ rm -rf $dir_test/testing
 cp -r  $dir_test/from $dir_test/testing
 
 # --- act -----------------------------------------------
-find  $dir_test/testing -type f                         |
+find  $dir_test/testing                                 |
 xargs $dir_base/unhide
 
 
