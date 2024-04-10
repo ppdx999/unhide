@@ -2,7 +2,7 @@
 
 ######################################################################
 #
-# unhide - Unhide a file or directory
+# unhide - open hidden file right there
 #
 # USAGE: unhide <file> ...
 #
