@@ -26,6 +26,7 @@ export PATH="$(command -p getconf PATH 2>/dev/null)${PATH+:}${PATH-}"
 case $PATH in :*) PATH=${PATH#?};; esac
 export UNIX_STD=2003  # to make HP-UX conform to POSIX
 
+# === Help message ===================================================
 case "$1" in
   -h|--help)
     echo "usage: unhide <file> ..."
@@ -33,6 +34,7 @@ case "$1" in
   ;;
 esac
 
+# === Main routine ===================================================
 for file in "$@"
 do
   dir=$(dirname "$file")
