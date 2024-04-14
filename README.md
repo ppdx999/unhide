@@ -1,6 +1,13 @@
 # unhide
 small command to open hidden file right there
 
+# install
+
+```terminal
+$ cd unhide
+$ ./install.sh  -d /usr/local/bin
+```
+
 # usage
 
 ```
