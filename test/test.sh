@@ -5,7 +5,7 @@
 # 
 dir_base=$(cd $(dirname $0)/..; pwd)
 dir_test=$(cd $(dirname $0); pwd)
-echo $dir_test
+dir_sh=$dir_base/lang/sh
 tmp=/tmp/unhide-$$
 
 #===============================================================================
@@ -17,7 +17,7 @@ printf "test single file: "
 touch ./.test-file-$$
 
 # --- act -----------------------------------------------
-$dir_base/unhide ./.test-file-$$
+$dir_sh/unhide ./.test-file-$$
 
 
 # --- assert -------------------------------------------
@@ -39,7 +39,7 @@ cp -r  $dir_test/from $dir_test/testing
 
 # --- act -----------------------------------------------
 find  $dir_test/testing                                 |
-xargs $dir_base/unhide
+xargs $dir_sh/unhide
 
 
 # # --- assert -------------------------------------------
